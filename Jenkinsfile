@@ -23,16 +23,16 @@ pipeline {
             }
 
         }
-          stage('deploy') {
-            steps {
-               sh 'mvn deploy'
-                 echo 'deploy to Production'
+          #stage('deploy') {
+            #steps {
+               #sh 'mvn deploy'
+                # echo 'deploy to Production'
             }
         }
-          stage('validate') {
-            steps {
-              sh 'mvn validate'
-                echo 'Validate all deployed codes to Prod'
+          #stage('validate') {
+            #steps {
+             # sh 'mvn validate'
+                #echo 'Validate all deployed codes to Prod'
                 
             }
         }
