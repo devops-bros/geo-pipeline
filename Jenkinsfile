@@ -25,7 +25,8 @@ pipeline {
          
           stage('deploy') {
             steps {
-                echo 'deployement'
+              sh 'mvn deploy'
+                echo 'deploy to Production'
                 
             }
         }
